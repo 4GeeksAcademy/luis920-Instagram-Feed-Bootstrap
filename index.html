@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed de instagram Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body style="background-color: black">
+    <!-- Barra de navegacion superior --> 
+    <nav class="navbar navbar-dark bg-dark py-7">
+      <div class="container-fluid">
+        <div class="d-flex w-100 justify-content-between">
+          <div>
+            <i class="fa-brands fa-square-instagram" style="color: aliceblue;"></i>
+            <h5 class="d-inline-block fs-5" style="color: aliceblue;">Instagram</h5>
+          </div>
+          <div class="d-flex align-right justify-content-end">
+            <button
+              type="button"
+              class="btn btn-danger me-5"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              style="background-color: rgb(255, 123, 0)"
+            >
+              Nueva publicacion
+            </button>
+            <div class="menu">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="menubutton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-user"></i>
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="menubutton"
+              >
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Datos y privacidad</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-danger" href="">Cerrar Sesión</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <!-- Boton de crear nueva publicacion --> 
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Crea una nueva publicacion
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Descripcion:</h6>
+            <textarea
+              class="form-control"
+              placeholder="agrega una descripcion"
+              id="floatingTextarea2"
+            ></textarea>
+            <div class="row p-2">
+              <button class="col-1 border rounded p-1 m-1 btn-light">
+                <i class="fa-solid fa-camera"></i>
+              </button>
+              <button class="col-1 border rounded p-1 m-1 btn-light">
+                <i class="fa-solid fa-location-dot"></i>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-success">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- menu para pagina de computadora y celular --> 
+    <div class="container-fluid p-2">
+      <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home"
+            type="button"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            ><i class="fa-solid fa-house"></i
+          ></a>
+        </li>
+        <li class="nav-item" role="presentation .nav-pill .nav-link.active">
+          <a
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile"
+            type="button"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+            ><i class="fa-solid fa-square-poll-horizontal"></i
+          ></a>
+        </li>
+      </ul>
+        <!-- contenido principal --> 
+      <div class="tab-content " id="myTabContent " >
+        <div
+          class="tab-pane fade show active overflow-hidden"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+          <div class="row">
+            <div class="col-4 p-1">
+              <img
+                style="height: 35vw; object-fit: cover"
+                src="https://images.unsplash.com/photo-1702494335276-422c606e50ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvdG9ncmFmJUMzJUFEYSUyMGRlJTIwYW5pbWFsZXMlMjBzYWx2YWplc3xlbnwwfHwwfHx8MA%3D%3D"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+            <div class="col-4 p-1">
+              <img
+                style="height: 35vw; object-fit: cover"
+                src="https://www.educaciontrespuntocero.com/wp-content/uploads/2022/09/beneficios-estudiantes-min.jpg"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+            <div class="col-4 p-1">
+              <img
+                style="height: 35vw; object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXQCLGcTLOS047F0St93fH0yFWfeqN1sxZfA&s"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-1">
+              <img
+                style="height: 35vw; object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3QdGzgda724hl3C8pHE_03kAkNsdmj_lIQ&s"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+            <div class="col-4 p-1">
+              <img
+                style="height: 35vw; object-fit: cover"
+                src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+            <div class="col-4 p-1">
+              <img
+                style="height: 35vw; object-fit: cover"
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Bastien_Pereira_.jpg"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-1">
+              <img
+                style="height: 35vw; object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRunmLVacKA7uGTpt7li5_7iqCjbSCw-07czQ&s"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+            <div class="col-4 p-1">
+              <img
+                style="height: 35vw; object-fit: cover"
+                src="https://as2.ftcdn.net/v2/jpg/02/10/19/09/1000_F_210190980_xz3EQUjljVIenoREAY03e76L4R20DLc1.jpg"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+            <div class="col-4 p-1">
+              <img
+                style="height: 35vw; object-fit: cover"
+                src="https://cdn.pixabay.com/photo/2019/04/01/11/28/food-stand-4095153_1280.jpg"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- contenido dispositivos moviles --> 
+        <div
+          class="tab-pane fade overflow-hidden"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          <div class="row my-4">
+            <div
+              class="col-6 mx-auto border rounded p-0"
+              style="color: aliceblue"
+            >
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">La naturaleza salvaje!</div>
+                <small class="align-bottom">08/26</small>
+              </div>
+              <img
+                style="object-fit: cover"
+                src="https://images.unsplash.com/photo-1702494335276-422c606e50ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvdG9ncmFmJUMzJUFEYSUyMGRlJTIwYW5pbWFsZXMlMjBzYWx2YWplc3xlbnwwfHwwfHx8MA%3D%3D"
+                class="img-fluid w-100 col-12"
+                alt=""
+              />
+              <div class="p-2">
+                <strong>504 Likes</strong>
+                <p>
+                  Este es un ejemplo de una foto que puedes postear en instagram
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div
+              class="col-6 mx-auto border rounded p-0"
+              style="color: aliceblue"
+            >
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">
+                  Aprender en equipo genera excelentes resultados
+                </div>
+                <small>07/09</small>
+              </div>
+              <img
+                style="object-fit: cover"
+                src="https://www.educaciontrespuntocero.com/wp-content/uploads/2022/09/beneficios-estudiantes-min.jpg"
+                class="img-fluid w-100 col-12"
+                alt=""
+              />
+              <div class="p-2">
+                <strong>26985 Likes</strong>
+                <p>
+                  Este es un ejemplo de una foto que puedes postear en instagram
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div
+              class="col-6 mx-auto border rounded p-0"
+              style="color: aliceblue"
+            >
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">la grandeza de Tailandia!</div>
+                <small>06/10</small>
+              </div>
+              <img
+                style="object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXQCLGcTLOS047F0St93fH0yFWfeqN1sxZfA&s"
+                class="img-fluid w-100 col-12"
+                alt=""
+              />
+              <div class="p-2">
+                <strong>358 Likes</strong>
+                <p>Este es un ejemplo que puedes postear en instagram!</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4" style="color: aliceblue">
+            <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">Usa tu EPP completo!</div>
+                <small class="align-bottom">08/26</small>
+              </div>
+              <img
+                style="object-fit: cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3QdGzgda724hl3C8pHE_03kAkNsdmj_lIQ&s"
+                class="img-fluid w-100 col-12"
+                alt=""
+              />
+              <div class="p-2">
+                <strong>730 Likes</strong>
+                <p>
+                  Este es un ejemplo de una foto que puedes postear en instagram
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- scripts --> 
+    <script
+      src="https://kit.fontawesome.com/072e5df971.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .nav-pill .nav-link {
+        color: rgb(171, 165, 165);
+      }
+      .nav-pill .nav-link.active {
+        color: rgb(255, 0, 0);
+      }
+    </style>
+  </body>
+</html>
